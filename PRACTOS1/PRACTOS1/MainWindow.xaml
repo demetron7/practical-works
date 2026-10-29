@@ -1,0 +1,42 @@
+﻿<Window x:Class="PRACTOS1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRACTOS1"
+        mc:Ignorable="d"
+        Title="новые люди " Height="525" Width="900"
+         ResizeMode="NoResize">
+    <Grid>
+        <Menu DockPanel.Dock="Top"  Margin="0,0,0,459">
+            <MenuItem Header="файл" Height="21">
+                <MenuItem Header="Заполнить" Click="zapolnit_Click"/>
+                <MenuItem Header="Сохранить" Click="save_Click"/>
+                <MenuItem Header="Открыть" Click="Open_Click"/>
+                <MenuItem Header="Очистить" Click="Clear_Open"/>
+            </MenuItem>
+            <MenuItem Header="справка">
+                <MenuItem Header="РазРаб">
+                    <MenuItem Header="тот кто тебя писал сука" Click="info_click"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <StackPanel Margin="10,30,10,10">
+            <TextBlock Text="кол-во элементов:"/>
+            <TextBox x:Name="txtELEMET" />
+            <TextBlock Text="Диапазон случайных чисел:"/>
+            <TextBox x:Name="txtRANDMAX"/>
+            <Button Content="летс гоу " Click="zapolnit_Click"/>
+            <DataGrid x:Name="DataGrid" Height="168" Margin="0,10"/>
+            <Button Content="найти переумножение всеХ цифирик" Click="Rachitai_Click"/>
+            <TextBlock Text="Результат:"/>
+            <TextBox x:Name="txtREZULT" IsReadOnly="True"/>
+            <StackPanel HorizontalAlignment="Right">
+                <Button Content="info" Click="info_click" Margin="0,5"/>
+                <Button Content="EXIT" Click="EXIT_Click" Width="71" Background="#FFF79898"/>
+            </StackPanel>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
