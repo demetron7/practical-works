@@ -8,13 +8,13 @@ namespace prctsBIB0._1
     {
        
 
-        public static void InitMas(out int[] mas, int elementik, int randMax)
+        public static void InitMas(out int[] mas, int elementik, int randMax) 
         {
 
             Random rnd = new Random();
             mas = new int[elementik];
             for (int i = 0; i < elementik; i++)
-                mas[i] = rnd.Next(-randMax, randMax);
+                mas[i] = rnd.Next(-randMax, randMax); 
 
         }
 
